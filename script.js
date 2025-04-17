@@ -27,9 +27,11 @@ class MovieApp {
             movieElement.classList.add('movie');
 
             movieElement.innerHTML = `
-                <h3>${movie.title}</h3>
+            <div class="movie-content">
+                <span class="movie-title">${movie.title}</span>
                 <button onclick="app.deleteMovie('${movie._id}')">Ta bort</button>
-            `;
+            </div>
+        `;
             this.moviesList.appendChild(movieElement);
         });
     }
