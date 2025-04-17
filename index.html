@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Applikation</title>
+    <title>Movie List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-'    <h1>Test</h1>
+    <h1>Filmlista</h1>
+
+
+    <form id="movie-form">
+        <input type="text" id="title" placeholder="Titel" required>
+        <input type="date" id="created" placeholder="Skapad datum" required>
+        <input type="text" id="genre" placeholder="Genre" required>
+        <input type="text" id="director" placeholder="Regissör" required>
+        <button type="submit">Lägg till film</button>
+    </form>
+
+    <div id="movies-list"></div>
 
     <script src="script.js"></script>
 </body>
